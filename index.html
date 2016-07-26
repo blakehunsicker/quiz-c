@@ -16,6 +16,33 @@
         font-family:FranklinITCProThin;
         src: url('assets/fonts/Franklin-ITC-Pro-Thin/56bcaf21-92ef-486a-836d-19f261762e57-3.woff');
       }
+
+      .questions{
+        position:relative;
+      }
+      .question {
+        opacity:0.5;
+      }
+      .active {
+        opacity:1;
+      }
+      .question-text {
+        font-family:FranklinITCProBold;
+        font-size:18px;
+        line-height: 24px;
+        margin:10px 0px 10px 0px;
+      }
+      .answer-text {
+        font-size:18px;
+      }
+      .answers li {
+        font-size:16px;
+      }
+      /*li:before {
+        content:'x';
+        color:green;
+        top:-5px;
+      }*/
    	</style>
   </head>
   <body style="background:#F2F2F2;font-family:FranklinITCProLight;">
@@ -24,114 +51,220 @@
       <div style="height:74px;background:#3C5366;"></div>
     </div>
     <div class="container" style="background:#e7e7e7;height:120vh;">
-      <div class="col-xs-12" style="background:#c3c3c3;height:100vh;top:164px;">
-        <div class="row">
-          <div class="col-lg-4" style="background:#e35959;height:100vh;">
-            <h3 style="font-family:FranklinITCProLight;">Question types</h3>
-          </div>
-          <div class="col-lg-8" style="background:#e9e879;height:100vh;">
-            <div class="question">
-              <ol type="1">
-                <li>
+      <div class="row" style="margin-top:164px;">
+        <div class="col-lg-4" style="">
+          <h3 style="z-index:1;position:fixed;font-family:FranklinITCProLight;">Question types</h3>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-7" style="height:100vh;">
+          <div class="questions" style="position:relative;">
+            <ol type="1">
+              <li class="question">
+                <div class="question-text">
                   Turkey's leaders have blamed an Islamic scholar named Fethullah Gulen for the coup attempt. He lives:
-                  <ol type="a">
-                    <li>in the suburbs of Paris</li>
-                    <li>in Istanbul</li>
-                    <li>near Toronto</li>
-                    <li>in rural Pennsylvania</li>
-                  </ol>
-                </li>
-                <li>
+                </div>
+                <ol type="a" class="answers">
+                  <li>
+                    <div class="answer-text">in the suburbs of Paris</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">in Istanbul</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">near Toronto</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">in rural Pennsylvania</div>
+                  </li>
+                </ol>
+              </li>
+              <li class="question">
+                <div class="question-text">
                   Before the tragic events in Nice, France, anti-terrorist investigators knew the attacker, Mohamed Lahouaiej Bouhlel, as:
-                  <ol type="a">
-                    <li>A loner with loose ties to the Islamic State.</li>
-                    <li>A deeply religious, well-liked father of three.</li>
-                    <li>A religious scholar.</li>
-                    <li>None of the above.</li>
-                  </ol>
-                </li>
-                <li>
+                </div>
+                <ol type="a" class="answers">
+                  <li>
+                    <div class="answer-text">A loner with loose ties to the Islamic State.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">A deeply religious, well-liked father of three.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">A religious scholar.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">None of the above.</div>
+                  </li>
+                </ol>
+              </li>
+              <li class="question">
+                <div class="question-text">
                   Donald Trump's choice of Indiana Gov. Mike Pence (R) as his running mate reassured many Republican Party leaders because: 
-                  <ol type="a">
-                    <li>He is an established politician with strong ties to the party.</li>
-                    <li>He should provide critical help in a swing state.</li>
-                    <li>He balances the ticket with more centrist views.</li>
-                    <li>All of the above.</li>
-                  </ol>
-                </li>
-                <li>
+                </div>
+                <ol type="a" class="answers">
+                  <li>
+                    <div class="answer-text">He is an established politician with strong ties to the party.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">He should provide critical help in a swing state.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">He balances the ticket with more centrist views.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">All of the above.</div>
+                  </li>
+                </ol>
+              </li>
+              <li class="question">
+                <div class="question-text">
                   Supreme Court Justice Ruth Bader Ginsburg faced heavy criticism after saying that Donald Trump: 
-                  <ol type="a">
-                    <li>"Has no consistency about him."</li>
-                    <li>"Says whatever comes into his head at the moment."</li>
-                    <li>"Really has an ego."</li>
-                    <li>All of the above.</li>
-                  </ol>
-                </li>
-                <li>
+                </div>
+                <ol type="a" class="answers">
+                  <li>
+                    <div class="answer-text">"Has no consistency about him."</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">"Says whatever comes into his head at the moment."</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">"Really has an ego."</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">All of the above.</div>
+                  </li>
+                </ol>
+              </li>
+              <li class="question">
+                <div class="question-text">
                   Theresa May became Britain's prime minister after: 
-                  <ol type="a">
-                    <li>David Cameron formally stepped aside.</li>
-                    <li>Her opponent dropped out.</li>
-                    <li>Arguing against the Brexit referendum.</li>
-                    <li>All of the above.</li>
-                  </ol>
-                </li>
-                <li>
+                </div>
+                <ol type="a" class="answers">
+                  <li>
+                    <div class="answer-text">David Cameron formally stepped aside.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Her opponent dropped out.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Arguing against the Brexit referendum.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">All of the above.</div>
+                  </li>
+                </ol>
+              </li>
+              <li class="question">
+                <div class="question-text">
                   Both the Holocaust Memorial Museum and the Arlington National Cemetery complained this week about: 
-                  <ol type="a">
-                    <li>Lax security.</li>
-                    <li>Protesters.</li>
-                    <li>Selfie sticks.</li>
-                    <li>Pokémon Go.</li>
-                  </ol>
-                </li>
-                <li>
+                </div>
+                <ol type="a" class="answers">
+                  <li>
+                    <div class="answer-text">Lax security.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Protesters.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Selfie sticks.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Pokemon Go.</div>
+                  </li>
+                </ol>
+              </li>
+              <li class="question">
+                <div class="question-text">
                   Gabby Douglas, the reigning Olympic all-around champion in gymnastics:
-                  <ol type="a">
-                    <li>Won the U.S. trials and is a heavy favorite to defend her title.</li>
-                    <li>Made the U.S. team after a shaky performance at the trials.</li>
-                    <li>Qualified in only one event, the uneven bars.</li>
-                    <li>Was named an alternate to the U.S. team.</li>
-                  </ol>
-                </li>
-                <li>
+                </div>
+                <ol type="a" class="answers">
+                  <li>
+                    <div class="answer-text">Won the U.S. trials and is a heavy favorite to defend her title.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Made the U.S. team after a shaky performance at the trials.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Qualified in only one event, the uneven bars.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Was named an alternate to the U.S. team.</div>
+                  </li>
+                </ol>
+              </li>
+              <li class="question">
+                <div class="question-text">
                   Why was this window in the news?
-                  <ol type="a">
-                    <li>A Yale worker smashed it in protest.</li>
-                    <li>A church discovered it under a coat of paint.</li>
-                    <li>A congregation raised money to replace it.</li>
-                    <li>An amateur pilot drove a drone into it.</li>
-                  </ol>
-                </li>
-                <li>
+                </div>
+                <ol type="a" class="answers">
+                  <li>
+                    <div class="answer-text">A Yale worker smashed it in protest.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">A church discovered it under a coat of paint.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">A congregation raised money to replace it.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">An amateur pilot drove a drone into it.</div>
+                  </li>
+                </ol>
+              </li>
+              <li class="question">
+                <div class="question-text">
                   Baristas at Starbucks across the United States will soon get:
-                  <ol type="a">
-                    <li>A raise.</li>
-                    <li>Free Uber rides home when they work late.</li>
-                    <li>Free beverages.</li>
-                    <li>None of the above.</li>
-                  </ol>
-                </li>
-                <li>
+                </div>
+                <ol type="a" class="answers">
+                  <li>
+                    <div class="answer-text">A raise.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Free Uber rides home when they work late.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Free beverages.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">None of the above.</div>
+                  </li>
+                </ol>
+              </li>
+              <li class="question">
+                <div class="question-text">
                   After giving Barbie a major makeover in January, Mattel's new problem is:
-                  <ol type="a">
-                    <li>Keeping up with brisk sales.</li>
-                    <li>A new protest over the Ken doll.</li>
-                    <li>Millennials who want their children's toys to have purpose and meaning.</li>
-                    <li>Parents of Gen Alphas, who are only buying vintage Barbies.</li>
-                  </ol>
-                </li>
+                </div>
+                <ol type="a" class="answers">
+                  <li>
+                    <div class="answer-text">Keeping up with brisk sales.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">A new protest over the Ken doll.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Millennials who want their children's toys to have purpose and meaning.</div>
+                  </li>
+                  <li>
+                    <div class="answer-text">Parents of Gen Alphas, who are only buying vintage Barbies.</div>
+                  </li>
+                </ol>
+              </li>
 
-              </ol>
-            </div>
+            </ol>
           </div>
-
         </div>
       </div>
     </div>
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(".question").click(function() {
+        $('html,body').animate({
+          scrollTop: $(this).offset().top - 174});
+        $(this).addClass('active');
+        $('.question').not(this).removeClass('active');
+      });
+    </script>
   </body>
 </html>
