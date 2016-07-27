@@ -2,47 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="quiz.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    	<style>
-      @font-face{
-        font-family:FranklinITCProBold;
-        src: url('assets/fonts/Franklin-ITC-Pro-Bold/e9e4c4dc-e548-4fef-9aa1-80c9cd0f02ce-3.woff');
-      }
-      @font-face{
-        font-family:FranklinITCProLight;
-        src: url('assets/fonts/Franklin-ITC-Pro-Light/b147bee6-eb48-46e1-86e1-2538a46794b6-3.woff');
-      }
-      @font-face{
-        font-family:FranklinITCProThin;
-        src: url('assets/fonts/Franklin-ITC-Pro-Thin/56bcaf21-92ef-486a-836d-19f261762e57-3.woff');
-      }
-
-      .questions{
-        position:relative;
-      }
-      .question {
-        opacity:0.5;
-      }
-      .active {
-        opacity:1;
-      }
-      .question-text {
-        font-family:FranklinITCProBold;
-        font-size:18px;
-        line-height: 24px;
-        margin:10px 0px 10px 0px;
-      }
-      .answer-text {
-        font-size:18px;
-      }
-      .answers li {
-        font-size:16px;
-      }
-      /*li:before {
-        content:'x';
-        color:green;
-        top:-5px;
-      }*/
+      
    	</style>
   </head>
   <body style="background:#F2F2F2;font-family:FranklinITCProLight;">
@@ -50,20 +13,25 @@
       <div style="height:50px;background:#2C3D4A;"></div>
       <div style="height:74px;background:#3C5366;"></div>
     </div>
-    <div class="container" style="background:#e7e7e7;height:120vh;">
+    <div class="container" style="">
       <div class="row" style="margin-top:164px;">
-        <div class="col-lg-4" style="">
-          <h3 style="z-index:1;position:fixed;font-family:FranklinITCProLight;">Question types</h3>
+        <div class="col-lg-4 side-panel" style="">
+          <h5 style="z-index:1;position:fixed;font-family:FranklinITCProLight;">Question types</h5>
+          <div class="q-settings">
+            <div class="q-one" style="display:none">
+              <img src="gullem.png" />
+            </div>
+          </div>
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-7" style="height:100vh;">
-          <div class="questions" style="position:relative;">
-            <ol type="1">
-              <li class="question">
-                <div class="question-text">
+          <div class="questions">
+            <ol class="question-list">
+              <li class="question" id="q-one">
+                <span class="question-text" style="display:inline;text-indent:-20px;">
                   Turkey's leaders have blamed an Islamic scholar named Fethullah Gulen for the coup attempt. He lives:
-                </div>
-                <ol type="a" class="answers">
+                </span>
+                <ol class="answers">
                   <li>
                     <div class="answer-text">in the suburbs of Paris</div>
                   </li>
@@ -82,7 +50,7 @@
                 <div class="question-text">
                   Before the tragic events in Nice, France, anti-terrorist investigators knew the attacker, Mohamed Lahouaiej Bouhlel, as:
                 </div>
-                <ol type="a" class="answers">
+                <ol class="answers">
                   <li>
                     <div class="answer-text">A loner with loose ties to the Islamic State.</div>
                   </li>
@@ -263,7 +231,18 @@
         $('html,body').animate({
           scrollTop: $(this).offset().top - 174});
         $(this).addClass('active');
+
+        var settings_link = '.'+$(this).attr("id")+'';
+
+        // document.getElementById(''+settings_link+'').css('display','block')
+        $('.q-settings').children().css('display','none');
+        $('.q-settings').find(settings_link).css('display','block');
+        console.log(settings_link);
+
+        
+        // For sure won't delete
         $('.question').not(this).removeClass('active');
+
       });
     </script>
   </body>
