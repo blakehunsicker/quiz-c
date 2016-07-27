@@ -18,7 +18,7 @@
       .question-list li:before{
         display:inline-block;
         font-family: FontAwesome;
-        content: "\f0d7" counter(elementcounter) ": "; /* print out "Element " followed by the current counter value */
+        content: "\f0d7" counter(elementcounter); /* print out "Element " followed by the current counter value */
         counter-increment:elementcounter; /* increment counter */
       }
       
@@ -47,7 +47,7 @@
         counter-reset:elementcounter; /* create custom counter and set it to 0 */
       }
       .answers li:before{
-        content: "frog " counter(elementcounter) ": "; /* print out "Element " followed by the current counter value */
+        content: "custom-item " counter(elementcounter) ": "; /* print out "Element " followed by the current counter value */
         counter-increment:elementcounter; /* increment counter */
       }
       /*li:before {
