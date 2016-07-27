@@ -11,49 +11,49 @@
         src: url('assets/fonts/Franklin-ITC-Pro-Thin/56bcaf21-92ef-486a-836d-19f261762e57-3.woff');
       }
 
-      .question-list{
-        list-style-type:none; /* delete default counter */
-        counter-reset:elementcounter; /* create custom counter and set it to 0 */
+      ol.question-list {
+        counter-reset: elementcounter;
       }
-      .question-list li:before{
-        display:inline-block;
-        font-family: FontAwesome;
-        content: "\f0d7" counter(elementcounter); /* print out "Element " followed by the current counter value */
-        counter-increment:elementcounter; /* increment counter */
-      }
-      
+      .question-list li{
+        display: table-row;
 
+      }
+      .question-list li.question:before{
+        display: table-cell;
+        text-align: right;
+        padding-right:1em;
+        font-family: FontAwesome;
+        content: "\f013" counter(elementcounter) "\f0d7";  
+        counter-increment:elementcounter; 
+      }
       .question {
         opacity:0.5;
+        font-size:14px;
       }
       .active {
         opacity:1;
       }
-      li.question {
-        font-size:14px;
-      }
       
       .question-text {
+        display:inline;
         font-family:FranklinITCProBold;
-        font-size:18px;
+        font-size:20px;
         line-height: 24px;
         margin:10px 0px 10px 0px;
       }
       .answer-text {
         font-size:18px;
       }
-      .answers{
-        list-style-type:none; /* delete default counter */
-        counter-reset:elementcounter; /* create custom counter and set it to 0 */
+      ol.answers{
+      }
+      .answers li {
+        display:block;
+        font-size:18px;
+        padding:20px 0px 20px 0px;
       }
       .answers li:before{
-        content: "custom-item " counter(elementcounter) ": "; /* print out "Element " followed by the current counter value */
-        counter-increment:elementcounter; /* increment counter */
+        
       }
-      /*li:before {
-        content:'x';
-        color:green;
-        top:-5px;
-      }*/
+      /**/
       .q-settings {
       }
