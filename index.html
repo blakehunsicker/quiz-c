@@ -23,8 +23,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-1"></div>
-        <div class="col-xs-8" style="height:100vh;">
+        <div class="col-xs-9" style="height:100vh;">
           <div class="questions">
             <ol class="question-list">
               <li class="question" id="q-one">
@@ -46,13 +45,16 @@
                   </li>
                 </ol>
               </li>
-              <li class="question">
+              <li class="question" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                 <div class="question-text">
                   Before the tragic events in Nice, France, anti-terrorist investigators knew the attacker, Mohamed Lahouaiej Bouhlel, as:
                 </div>
                 <ol class="answers">
                   <li>
-                    <div class="answer-text">A loner with loose ties to the Islamic State.</div>
+                    <div class="row">
+                      <div class="answer-text col-xs-9">A loner with loose ties to the Islamic State.</div>
+                      <div class="col-xs-3">h</div>
+                    </div>
                   </li>
                   <li>
                     <div class="answer-text">A deeply religious, well-liked father of three.</div>
@@ -221,11 +223,23 @@
             </ol>
           </div>
         </div>
+                <!-- <div class="col-xs-1"></div> -->
+
       </div>
+
     </div>
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+        var current_pos = $('.active').offset();
+        $('.popover').css({ 
+          'top': current_pos
+        });
+      })
+    </script>
     <script type="text/javascript">
       $(".question").click(function() {
         $('html,body').animate({

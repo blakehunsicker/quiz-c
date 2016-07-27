@@ -22,6 +22,7 @@
         display: table-cell;
         text-align: right;
         padding-right:1em;
+        margin-bottom:3em;
         font-family: FontAwesome;
         content: "\f013" counter(elementcounter) "\f0d7";  
         counter-increment:elementcounter; 
@@ -29,6 +30,7 @@
       .question {
         opacity:0.5;
         font-size:14px;
+        padding-bottom:60px!important;
       }
       .active {
         opacity:1;
@@ -39,21 +41,26 @@
         font-family:FranklinITCProBold;
         font-size:20px;
         line-height: 24px;
-        margin:10px 0px 10px 0px;
+        margin:15px 0px 15px 0px;
       }
       .answer-text {
         font-size:18px;
       }
       ol.answers{
+        counter-reset: elementcounter;
       }
       .answers li {
-        display:block;
-        font-size:18px;
-        padding:20px 0px 20px 0px;
+        display: table-row;
+        font-size:20;
+        padding:15px 0px 15px 0px;
       }
       .answers li:before{
-        
+        display: table-cell;
+        padding-right:1em;
+        padding-bottom:1em;
+        /*padding-top:2em;*/
+        content: counter(elementcounter, lower-alpha);  
+        counter-increment:elementcounter; 
       }
-      /**/
       .q-settings {
       }
