@@ -23,7 +23,7 @@
         text-align: right;
         padding-right:1em;
         margin-bottom:3em;
-        /*font-family: FontAwesome;*/
+        font-family: FontAwesome;
         content: counter(elementcounter);  
         counter-increment:elementcounter; 
       }
@@ -35,6 +35,21 @@
       .active {
         opacity:1;
       }
+
+      /*FONT SIZE PLAYGROUND*/
+
+      .active > .question-text {
+        font-size:22px;
+      }
+      .active > ol.answers li .answer-text{
+        font-size: 20px;
+      }
+
+      .active > ol.answers li:before{
+        padding-top:2em;
+      }
+
+      /*END OF FONT SIZE PLAYGROUND*/
       
       .question-text {
         display:inline;
@@ -62,10 +77,6 @@
         content: counter(elementcounter, lower-alpha);  
         counter-increment:elementcounter; 
       }
-
-      
-
-
       .category-header {
         font-size: 16px;
         /*font-family: FranklinITCProBold;*/
@@ -117,29 +128,3 @@
         background:#FFF;
         border: 2px dotted #828282;
       }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -63,7 +63,24 @@
         counter-increment:elementcounter; 
       }
 
-      
+      ol.feedback{
+        counter-reset: elementcounter;
+      }
+      .feedback li {
+        display: table-row;
+        font-size:20;
+        padding:15px 0px 15px 0px;
+      }
+      .feedback li:before{
+        display: table-cell;
+        padding-right:1em;
+        padding-bottom:1em;
+        padding-top:1em;
+        /*transform: rotate(225deg);*/
+        font-family: FontAwesome;
+        content: '\f064';
+        counter-increment:elementcounter; 
+      }
 
 
       .category-header {
@@ -117,7 +134,6 @@
         background:#FFF;
         border: 2px dotted #828282;
       }*/
-
 
 
 
