@@ -278,20 +278,32 @@
             </ol>
           </div>
         </div>
-        <div class="col-xs-4 attachments" style="display:none;">
-        <div style="border:1px solid#d5d5d5;border-radius:50%;width:30px;height:30px;text-align:center;padding-top:1.5%;position:absolute;left:-15px;background:#f2f2f2;">Q#</div>
-          
+        <div class="col-xs-4 col-xs-offset-1 attachments" style="display:none;">
+          <div style="border:1px solid#d5d5d5;border-radius:50%;width:30px;height:30px;text-align:center;padding-top:1.5%;position:absolute;left:-15px;background:#f2f2f2;">Q#</div>
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
               <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOnee" aria-expanded="false" aria-controls="collapseOne">
                   Add media to this question
                 </a>
               </h4>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div id="collapseOnee" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
-                
+                <div id="collapseOnee" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <div style="width:100%;height:auto;font-size:18px;padding:10px;background:#f0f0f0;border:2px dotted #ccc;border-radius:4px;margin: 10px 0px 10px 0px;">
+                        Drag image, audio or video file here or click to upload from your device
+
+                        <div style="text-align:center;display:inline-block;font-size:14px;width:45%;border-right:1px solid #ccc;margin-top:20px;">
+                          Paste media URL
+                        </div>
+                        <div style="text-align:center;display:inline-block;font-size:14px;width:50%;">
+                          Upload from PostPic
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -311,8 +323,10 @@
 
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="a">
-
-    
+                <form style="margin-top:20px;">
+                  <input type="radio" unchecked> Correct answer
+                </form>
+                
                 <div class="add-media panel panel-default">
                   <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
@@ -323,15 +337,16 @@
                   </div>
                   <div id="collapseImgA" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                      <div style="width:100%;height:auto;font-size:18px;padding:10px;background:#f0f0f0;border:2px dotted #ccc;border-radius:4px;margin: 20px 0px 20px 0px;">
-                    Drag image, audio or video file here or click to upload from your device
-                    <div style="text-align:center;display:inline-block;font-size:14px;width:45%;border-right:1px solid #ccc;">
-                      Paste media URL
-                    </div>
-                    <div style="text-align:center;display:inline-block;font-size:14px;width:50%;">
-                      Upload from PostPic
-                    </div>
-                  </div>
+                      <div style="width:100%;height:auto;font-size:18px;padding:10px;background:#f0f0f0;border:2px dotted #ccc;border-radius:4px;margin: 10px 0px 10px 0px;">
+                        Drag image, audio or video file here or click to upload from your device
+                        <h6 style='color:#9b9b9b;'>Accepted files types are abc, def, ghi, jkl, mnop</h6>
+                        <div style="text-align:center;display:inline-block;font-size:14px;width:45%;border-right:1px solid #ccc;margin-top:20px;">
+                          Paste media URL
+                        </div>
+                        <div style="text-align:center;display:inline-block;font-size:14px;width:50%;">
+                          Upload from PostPic
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -340,7 +355,7 @@
                   <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
                       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFBA" aria-expanded="false" aria-controls="collapseFBA">
-                        Add feedback to this answer
+                        Add feedback to users who choose this answer
                       </a>
                     </h4>
                   </div>
@@ -407,7 +422,7 @@
       $(".question").click(function() {
         console.log('active q is '+$('.question.active:before').text());
         $('html,body').animate({
-          scrollTop: $(this).offset().top - 150
+          scrollTop: $(this).offset().top - 160
         });
 
         $('.collapse.in').collapse('hide');
@@ -442,7 +457,8 @@
             .hide();
           // $('.question ol.answers li').css('background','#f2f2f2');
           // $(active_answer_text).css('background','#c3c3c3');
-          $('.question.active ol.answers li.' + active_tab + '').addClass('selected')
+          $('.question.active ol.answers li.' + active_tab + '')
+            .addClass('selected')
           $('.question.active ol.answers li').not('.question.active ol.answers li.' + active_tab + '').removeClass('selected');
         })
 
