@@ -1,14 +1,14 @@
 @font-face{
         font-family:FranklinITCProBold;
-        src: url('assets/fonts/Franklin-ITC-Pro-Bold/e9e4c4dc-e548-4fef-9aa1-80c9cd0f02ce-3.woff');
+        src: url('fonts/Franklin-ITC-Pro-Bold/e9e4c4dc-e548-4fef-9aa1-80c9cd0f02ce-3.woff');
       }
       @font-face{
         font-family:FranklinITCProLight;
-        src: url('assets/fonts/Franklin-ITC-Pro-Light/b147bee6-eb48-46e1-86e1-2538a46794b6-3.woff');
+        src: url('fonts/Franklin-ITC-Pro-Light/b147bee6-eb48-46e1-86e1-2538a46794b6-3.woff');
       }
       @font-face{
         font-family:FranklinITCProThin;
-        src: url('assets/fonts/Franklin-ITC-Pro-Thin/56bcaf21-92ef-486a-836d-19f261762e57-3.woff');
+        src: url('fonts/Franklin-ITC-Pro-Thin/56bcaf21-92ef-486a-836d-19f261762e57-3.woff');
       }
 
       ol.question-list {
@@ -63,7 +63,7 @@
         counter-increment:elementcounter; 
       }
 
-      
+
 
 
       .category-header {

@@ -2,8 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="quiz.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/quiz.css"/>
    	<style>
       
    	</style>
@@ -14,7 +14,18 @@
       <div style="height:74px;background:#3C5366;"></div>
     </div>
     <div class="container" style="">
-      <div class="row" style="margin-top:164px;">
+      <div style="margin-top:164px;">
+        <!-- <div class="slug" style="padding-bottom:10px;border-bottom:1px solid #d5d5d5;">
+          <h3>Slug <small style="padding-left:10px;">Choose a unique name so you and others can easily find this quiz.</small></h3>
+          <span class="blinking-cursor">|</span>
+        </div> -->
+        <div class="title" style="padding-bottom:10px;border-bottom:1px solid #d5d5d5;">
+          <h4>Title <small style="padding-left:10px;">Choose a title that will display for readers.</small></h4>
+          <div style="font-size:24px;">Know your news quiz<span class="blinking-cursor">|</span></div>
+        </div>
+
+      </div>
+      <div class="row" style="margin-top:30px;">
         <!-- <div class="col-xs-3 side-panel" style="">
           <h5 style="z-index:1;position:fixed;font-family:FranklinITCProLight;">Question types</h5>
           <div class="q-settings">
@@ -23,25 +34,28 @@
             </div>
           </div>
         </div> -->
-        <div class="col-xs-8 col-xs-offset-0" style="height:100vh;margin-top:10px;">
+        <div class="col-xs-7 col-xs-offset-0" style="height:100vh;">
           <div class="questions">
+            <div class="section-header">
+              <h3 style="margin-top:0px;">Questions <small style="padding-left:10px;">Add at least one question to ask readers</small></h3>
+            </div>
             <ol class="question-list">
               <li class="question" id="q-one">
                 <span class="question-text">
                   Turkey's leaders have blamed an Islamic scholar named Fethullah Gulen for the coup attempt. He lives:
                 </span>
                 <ol class="answers" type="a">
-                  <li>
-                    <div class="answer-text">in the suburbs of Paris</div>
+                  <li class="A">
+                    <div class="answer-text">in the suburbs of Paris <i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
                   </li>
-                  <li>
-                    <div class="answer-text">in Istanbul</div>
+                  <li class="B">
+                    <div class="answer-text">in Istanbul <i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
                   </li>
-                  <li>
-                    <div class="answer-text">near Toronto</div>
+                  <li class="C">
+                    <div class="answer-text">near Toronto <i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
                   </li>
-                  <li>
-                    <div class="answer-text">in rural Pennsylvania</div>
+                  <li class="D">
+                    <div class="answer-text">in rural Pennsylvania <i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
                   </li>
                 </ol>
               </li>
@@ -50,16 +64,16 @@
                   Before the tragic events in Nice, France, anti-terrorist investigators knew the attacker, Mohamed Lahouaiej Bouhlel, as:
                 </div>
                 <ol class="answers">
-                  <li>
+                  <li class="A">
                       <div class="answer-text">A loner with loose ties to the Islamic State.</div>
                   </li>
-                  <li>
+                  <li class="B">
                     <div class="answer-text">A deeply religious, well-liked father of three.</div>
                   </li>
-                  <li>
+                  <li class="C">
                     <div class="answer-text">A religious scholar.</div>
                   </li>
-                  <li>
+                  <li class="D">
                     <div class="answer-text">None of the above.</div>
                   </li>
                 </ol>
@@ -69,16 +83,16 @@
                   Donald Trump's choice of Indiana Gov. Mike Pence (R) as his running mate reassured many Republican Party leaders because: 
                 </div>
                 <ol type="a" class="answers">
-                  <li>
+                  <li class="A">
                     <div class="answer-text">He is an established politician with strong ties to the party.</div>
                   </li>
-                  <li>
+                  <li class="B">
                     <div class="answer-text">He should provide critical help in a swing state.</div>
                   </li>
-                  <li>
+                  <li class="C">
                     <div class="answer-text">He balances the ticket with more centrist views.</div>
                   </li>
-                  <li>
+                  <li class="D">
                     <div class="answer-text">All of the above.</div>
                   </li>
                 </ol>
@@ -88,16 +102,16 @@
                   Supreme Court Justice Ruth Bader Ginsburg faced heavy criticism after saying that Donald Trump: 
                 </div>
                 <ol type="a" class="answers">
-                  <li>
+                  <li class="A">
                     <div class="answer-text">"Has no consistency about him."</div>
                   </li>
-                  <li>
+                  <li class="B">
                     <div class="answer-text">"Says whatever comes into his head at the moment."</div>
                   </li>
-                  <li>
+                  <li class="C">
                     <div class="answer-text">"Really has an ego."</div>
                   </li>
-                  <li>
+                  <li class="D">
                     <div class="answer-text">All of the above.</div>
                   </li>
                 </ol>
@@ -107,16 +121,16 @@
                   Theresa May became Britain's prime minister after: 
                 </div>
                 <ol type="a" class="answers">
-                  <li>
+                  <li class="A">
                     <div class="answer-text">David Cameron formally stepped aside.</div>
                   </li>
-                  <li>
+                  <li class="B">
                     <div class="answer-text">Her opponent dropped out.</div>
                   </li>
-                  <li>
+                  <li class="C">
                     <div class="answer-text">Arguing against the Brexit referendum.</div>
                   </li>
-                  <li>
+                  <li class="D">
                     <div class="answer-text">All of the above.</div>
                   </li>
                 </ol>
@@ -126,16 +140,16 @@
                   Both the Holocaust Memorial Museum and the Arlington National Cemetery complained this week about: 
                 </div>
                 <ol type="a" class="answers">
-                  <li>
+                  <li class="A">
                     <div class="answer-text">Lax security.</div>
                   </li>
-                  <li>
+                  <li class="B">
                     <div class="answer-text">Protesters.</div>
                   </li>
-                  <li>
+                  <li class="C">
                     <div class="answer-text">Selfie sticks.</div>
                   </li>
-                  <li>
+                  <li class="D">
                     <div class="answer-text">Pokemon Go.</div>
                   </li>
                 </ol>
@@ -145,16 +159,16 @@
                   Gabby Douglas, the reigning Olympic all-around champion in gymnastics:
                 </div>
                 <ol type="a" class="answers">
-                  <li>
+                  <li class="A">
                     <div class="answer-text">Won the U.S. trials and is a heavy favorite to defend her title.</div>
                   </li>
-                  <li>
+                  <li class="B">
                     <div class="answer-text">Made the U.S. team after a shaky performance at the trials.</div>
                   </li>
-                  <li>
+                  <li class="C">
                     <div class="answer-text">Qualified in only one event, the uneven bars.</div>
                   </li>
-                  <li>
+                  <li class="D">
                     <div class="answer-text">Was named an alternate to the U.S. team.</div>
                   </li>
                 </ol>
@@ -164,16 +178,16 @@
                   Why was this window in the news?
                 </div>
                 <ol type="a" class="answers">
-                  <li>
+                  <li class="A">
                     <div class="answer-text">A Yale worker smashed it in protest.</div>
                   </li>
-                  <li>
+                  <li class="B">
                     <div class="answer-text">A church discovered it under a coat of paint.</div>
                   </li>
-                  <li>
+                  <li class="C">
                     <div class="answer-text">A congregation raised money to replace it.</div>
                   </li>
-                  <li>
+                  <li class="D">
                     <div class="answer-text">An amateur pilot drove a drone into it.</div>
                   </li>
                 </ol>
@@ -183,16 +197,16 @@
                   Baristas at Starbucks across the United States will soon get:
                 </div>
                 <ol type="a" class="answers">
-                  <li>
+                  <li class="A">
                     <div class="answer-text">A raise.</div>
                   </li>
-                  <li>
+                  <li class="B">
                     <div class="answer-text">Free Uber rides home when they work late.</div>
                   </li>
-                  <li>
+                  <li class="C">
                     <div class="answer-text">Free beverages.</div>
                   </li>
-                  <li>
+                  <li class="D">
                     <div class="answer-text">None of the above.</div>
                   </li>
                 </ol>
@@ -202,16 +216,16 @@
                   After giving Barbie a major makeover in January, Mattel's new problem is:
                 </div>
                 <ol type="a" class="answers">
-                  <li>
+                  <li class="A">
                     <div class="answer-text">Keeping up with brisk sales.</div>
                   </li>
-                  <li>
+                  <li class="B">
                     <div class="answer-text">A new protest over the Ken doll.</div>
                   </li>
-                  <li>
+                  <li class="C">
                     <div class="answer-text">Millennials who want their children's toys to have purpose and meaning.</div>
                   </li>
-                  <li>
+                  <li class="D">
                     <div class="answer-text">Parents of Gen Alphas, who are only buying vintage Barbies.</div>
                   </li>
                 </ol>
@@ -219,111 +233,140 @@
 
             </ol>
           </div>
-        </div>
-        <div class="col-xs-4 attachments">
-          <!-- <div class="category-header">
-            Question 1
-          </div> -->
-          
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default add">
-              <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Add an image to this Question
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
+          <div class="results">
+            <div class="section-header">
+              <h3 style="margin-top:0px;">Results <small style="padding-left:10px;">Let readers know how they did on your quiz.</small></h3>
+            </div>
+            <ol class="question-list">
+              <li class="question" id="q-one">
+                <span class="question-text">
+                  You absolutely do not know your news.
+                </span>
+              </li>
+              <li class="question" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                <div class="question-text">
+                  Warning: You're dangerously out of the loop.
                 </div>
+              </li>
+              <li class="question">
+                <div class="question-text">
+                  You've got some catching up to do.
+                </div>
+              </li>
+              <li class="question">
+                <div class="question-text">
+                  OK! But you can do better, we're sure of it.
+                </div>
+              </li>
+              <li class="question">
+                <div class="question-text">
+                  Bravo! You clearly pay attention.
+                </div>
+              </li>
+              <li class="question">
+                <div class="question-text">
+                  You're an exceedingly well-read citizen of the world.
+                </div>
+              </li>
+              <li class="question">
+                <div class="question-text">
+                  Congratulations! You absolutely know your news.
+                </div>
+              </li>
+              
+
+            </ol>
+          </div>
+        </div>
+        <div class="col-xs-4 attachments" style="display:none;">
+        <div style="border:1px solid#d5d5d5;border-radius:50%;width:30px;height:30px;text-align:center;padding-top:1.5%;position:absolute;left:-15px;background:#f2f2f2;">Q#</div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Add media to this question
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                
               </div>
             </div>
           </div>
 
-          
           <div class="category-header">
-            Answers
+            Add media and feedback to answers to this question
           </div>
           <div>
 
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#a" aria-controls="home" role="tab" data-toggle="tab">A</a></li>
-              <li role="presentation"><a href="#b" aria-controls="profile" role="tab" data-toggle="tab">B</a></li>
-              <li role="presentation"><a href="#c" aria-controls="messages" role="tab" data-toggle="tab">C</a></li>
-              <li role="presentation"><a href="#d" aria-controls="settings" role="tab" data-toggle="tab">D</a></li>
+            <ul class="nav nav-tabs answers-tabs" role="tablist">
+              <li role="presentation" class="a active"><a href="#a" aria-controls="home" role="tab" data-toggle="tab">A</a></li>
+              <li role="presentation" class="b"><a href="#b" aria-controls="profile" role="tab" data-toggle="tab">B</a></li>
+              <li role="presentation" class="c"><a href="#c" aria-controls="messages" role="tab" data-toggle="tab">C</a></li>
+              <li role="presentation" class="d"><a href="#d" aria-controls="settings" role="tab" data-toggle="tab">D</a></li>
             </ul>
 
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="a">
-                <div style="width:100%;height:auto;font-size:18px;padding:10px;background:#f0f0f0;border:2px dotted #ccc;border-radius:4px;margin: 10px 0px 10px 0px;">
-                  Drag image, audio or video file here or click to upload from your device
-                  <div style="text-align:center;display:inline-block;font-size:14px;width:45%;border-right:1px solid #ccc;">
-                    Paste media URL
+
+    
+                <div class="add-media panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseImgA" aria-expanded="false" aria-controls="collapseImgA">
+                        Add media to this answer
+                      </a>
+                    </h4>
                   </div>
-                  <div style="text-align:center;display:inline-block;font-size:14px;width:50%;">
-                    Upload from PostPic
+                  <div id="collapseImgA" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <div style="width:100%;height:auto;font-size:18px;padding:10px;background:#f0f0f0;border:2px dotted #ccc;border-radius:4px;margin: 20px 0px 20px 0px;">
+                    Drag image, audio or video file here or click to upload from your device
+                    <div style="text-align:center;display:inline-block;font-size:14px;width:45%;border-right:1px solid #ccc;">
+                      Paste media URL
+                    </div>
+                    <div style="text-align:center;display:inline-block;font-size:14px;width:50%;">
+                      Upload from PostPic
+                    </div>
+                  </div>
+                    </div>
                   </div>
                 </div>
-                <div class="input-group" style="width:100%;">
-                  <input type="text" class="form-control question-field" placeholder="Enter feedback headline" aria-describedby="basic-addon2" style="border-radius:4px;">
+
+                <div class="add-feedback panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFBA" aria-expanded="false" aria-controls="collapseFBA">
+                        Add feedback to this answer
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFBA" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <div class="input-group" style="width:100%;">
+                        <input type="text" class="form-control question-field" placeholder="Enter feedback headline" aria-describedby="basic-addon2" style="border-radius:4px;">
+                      </div>
+                      <div class="input-group" style="width:100%;margin-top:20px;">
+                        <input type="text" class="form-control question-field" placeholder="Enter feedback headline" aria-describedby="basic-addon2" style="height:72px;border-radius:4px;">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="input-group" style="width:100%;margin-top:20px;">
-                  <input type="text" class="form-control question-field" placeholder="Enter feedback headline" aria-describedby="basic-addon2" style="height:72px;border-radius:4px;">
-                </div>
+
+              </div>                
                
               </div>
               <div role="tabpanel" class="tab-pane" id="b">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default add">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseB" aria-expanded="true" aria-controls="collapseB">
-                          Add an image to this Question
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseB" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body">
-                      </div>
-                    </div>
-                  </div>
-                </div>                
+                             
               </div>
               <div role="tabpanel" class="tab-pane" id="c">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default add">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseC" aria-expanded="true" aria-controls="collapseC">
-                          Add an image to this Question
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseC" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body">
-                      </div>
-                    </div>
-                  </div>
-                </div>                
+                              
               </div>
               <div role="tabpanel" class="tab-pane" id="d">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default add">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseD" aria-expanded="true" aria-controls="collapseD">
-                          Add an image to this Question
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseD" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body">
-                      </div>
-                    </div>
-                  </div>
-                </div>                
+                               
               </div>
             </div>
 
@@ -353,14 +396,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <script type="text/javascript">
+    $('.question.active ol.answers li .answer-text .fa-long-arrow-right')
+            .hide();
       $('#myTabs a').click(function (e) {
         e.preventDefault()
         $(this).tab('show')
-      })
+
+      });
+
       $(".question").click(function() {
+        console.log('active q is '+$('.question.active:before').text());
         $('html,body').animate({
-          scrollTop: $(this).offset().top - 174
+          scrollTop: $(this).offset().top - 150
         });
+
+        $('.collapse.in').collapse('hide');
 
         $(this)
           .addClass('active');
@@ -368,19 +418,14 @@
         // For sure won't delete
         $('.question').not(this)
           .removeClass('active')
-        // $('.active:before')
-        //   .css({
-        //     'padding-left':'20px'
-        //   });
 
-        var attachment_loc = $('.active').offset().top - 165;
+        var attachment_loc = $('.active').offset().top - 290;
 
         $('.attachments').css({
-          'top':attachment_loc,
-          '-webkit-animation':'top 2s'
+          'display':'block',
+          'top':attachment_loc
+          
         });
-
-        
 
         var settings_link = '.'+$(this).attr("id")+'';
 
@@ -389,9 +434,52 @@
         $('.q-settings').find(settings_link).css('display','block');
         console.log(settings_link);
 
+        $('.nav-tabs li').click(function(){
+          var active_tab = $(this).find('a').text();
+          console.log(active_tab)
+          var active_answer_text = $('.question.active ol.answers li.' + active_tab + '');
+          $('.question.active ol.answers li .answer-text .fa-long-arrow-right')
+            .hide();
+          // $('.question ol.answers li').css('background','#f2f2f2');
+          // $(active_answer_text).css('background','#c3c3c3');
+          $('.question.active ol.answers li.' + active_tab + '').addClass('selected')
+          $('.question.active ol.answers li').not('.question.active ol.answers li.' + active_tab + '').removeClass('selected');
+        })
+
+        /*COLORING ANSWER BACKGROUND*/
+
+        // $('.nav-tabs li').click(function(){
+        //   $('.nav-tabs>li>a').css('background-color','none');
+        //   $('.nav-tabs>li>a.active').css('background-color','#c3c3c3');
+        //   var active_tab = $(this).find('a').text();
+        //   console.log(active_tab)
+        //   var active_answer_text = $('.question.active ol.answers li.' + active_tab + '');
+        //   $('.question.active ol.answers li').css({
+        //     'background':'#f2f2f2',
+        //     'border-radius':'4px'
+        //   });
+        //   $('.question.active ol.answers li .answer-text .fa-long-arrow-right')
+        //     .hide();
+        //   $('.question ol.answers li').css('background','#f2f2f2');
+        //   $(active_answer_text).css('background','#c3c3c3');
+        //   $('.question.active ol.answers li.' + active_tab + ' .answer-text .fa-long-arrow-right')
+        //     .show();
+        // })
+
         
         
 
+      });
+    </script>
+    <script type="text/javascript">
+      $('.slug').click(function(){
+        $('.slug span.blinking-cursor').css('visibility','visible');
+        $('.title span.blinking-cursor').css('visibility','hidden');
+      });
+
+      $('.title').click(function(){
+        $('.title span.blinking-cursor').css('visibility','visible');
+        $('.slug span.blinking-cursor').css('visibility','hidden');
       });
     </script>
   </body>
