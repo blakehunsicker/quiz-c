@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/quiz.css"/>
    	<style>
@@ -15,10 +15,6 @@
     </div>
     <div class="container" style="">
       <div style="margin-top:164px;">
-        <!-- <div class="slug" style="padding-bottom:10px;border-bottom:1px solid #d5d5d5;">
-          <h3>Slug <small style="padding-left:10px;">Choose a unique name so you and others can easily find this quiz.</small></h3>
-          <span class="blinking-cursor">|</span>
-        </div> -->
         <div class="title" style="padding-bottom:10px;border-bottom:1px solid #d5d5d5;">
           <h4>Title <small style="padding-left:10px;">Choose a title that will display for readers.</small></h4>
           <div style="font-size:24px;">Know your news quiz<span class="blinking-cursor">|</span></div>
@@ -26,15 +22,7 @@
 
       </div>
       <div class="row" style="margin-top:30px;">
-        <!-- <div class="col-xs-3 side-panel" style="">
-          <h5 style="z-index:1;position:fixed;font-family:FranklinITCProLight;">Question types</h5>
-          <div class="q-settings">
-            <div class="q-one" style="display:none">
-              <img src="gullem.png" />
-            </div>
-          </div>
-        </div> -->
-        <div class="col-xs-7 col-xs-offset-0" style="height:100vh;">
+        <div class="col-xs-7 col-xs-offset-1" style="height:100vh;">
           <div class="questions">
             <div class="section-header">
               <h3 style="margin-top:0px;">Questions <small style="padding-left:10px;">Add at least one question to ask readers</small></h3>
@@ -278,134 +266,73 @@
             </ol>
           </div>
         </div>
-        <div class="col-xs-4 col-xs-offset-1 attachments" style="display:none;">
-          <div style="border:1px solid#d5d5d5;border-radius:50%;width:30px;height:30px;text-align:center;padding-top:1.5%;position:absolute;left:-15px;background:#f2f2f2;">Q#</div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
+        <div class="col-xs-4 attachments" style="display:none;">
+
+          <div class="panel panel-default regular-pane">
+            <div class="panel-heading regular-pane-header" role="tab" id="question-media-heading">
               <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOnee" aria-expanded="false" aria-controls="collapseOne">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#question-media" aria-expanded="false" aria-controls="question-media">
                   Add media to this question
+                  <i class="fa fa-caret-down"></i>
                 </a>
               </h4>
             </div>
-            <div id="collapseOnee" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div id="question-media" class="panel-collapse collapse" role="tabpanel" aria-labelledby="question-media-heading">
               <div class="panel-body">
-                <div id="collapseOnee" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      <div style="width:100%;height:auto;font-size:18px;padding:10px;background:#f0f0f0;border:2px dotted #ccc;border-radius:4px;margin: 10px 0px 10px 0px;">
-                        Drag image, audio or video file here or click to upload from your device
-
-                        <div style="text-align:center;display:inline-block;font-size:14px;width:45%;border-right:1px solid #ccc;margin-top:20px;">
-                          Paste media URL
-                        </div>
-                        <div style="text-align:center;display:inline-block;font-size:14px;width:50%;">
-                          Upload from PostPic
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="category-header">
-            Add media and feedback to answers to this question
-          </div>
-          <div>
-
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs answers-tabs" role="tablist">
-              <li role="presentation" class="a active"><a href="#a" aria-controls="home" role="tab" data-toggle="tab">A</a></li>
-              <li role="presentation" class="b"><a href="#b" aria-controls="profile" role="tab" data-toggle="tab">B</a></li>
-              <li role="presentation" class="c"><a href="#c" aria-controls="messages" role="tab" data-toggle="tab">C</a></li>
-              <li role="presentation" class="d"><a href="#d" aria-controls="settings" role="tab" data-toggle="tab">D</a></li>
-            </ul>
-
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane active" id="a">
-                <form style="margin-top:20px;">
-                  <input type="radio" unchecked> Correct answer
-                </form>
-                
-                <div class="add-media panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseImgA" aria-expanded="false" aria-controls="collapseImgA">
-                        Add media to this answer
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseImgA" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      <div style="width:100%;height:auto;font-size:18px;padding:10px;background:#f0f0f0;border:2px dotted #ccc;border-radius:4px;margin: 10px 0px 10px 0px;">
-                        Drag image, audio or video file here or click to upload from your device
-                        <h6 style='color:#9b9b9b;'>Accepted files types are abc, def, ghi, jkl, mnop</h6>
-                        <div style="text-align:center;display:inline-block;font-size:14px;width:45%;border-right:1px solid #ccc;margin-top:20px;">
-                          Paste media URL
-                        </div>
-                        <div style="text-align:center;display:inline-block;font-size:14px;width:50%;">
-                          Upload from PostPic
-                        </div>
-                      </div>
-                    </div>
+                <div class="upload">
+                  <i class="fa fa-paperclip" aria-hidden="true"></i>
+                  <div class="upload-text">
+                    <h6>Add an image, video or audio file</h6>
+                    <h4>Drag a file here or click to upload</h4>
+                    <h5>Formats: <small><span class="filetype">jpeg</span><span class="filetype">jpg</span><span class="filetype">png</span><span class="filetype">gif</span></small></h5>
+                    <h5><span class="upload-alts">Paste link</span><span class="upload-alts">Paste link</span></h5>
                   </div>
                 </div>
-
-                <div class="add-feedback panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFBA" aria-expanded="false" aria-controls="collapseFBA">
-                        Add feedback to users who choose this answer
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseFBA" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      <div class="input-group" style="width:100%;">
-                        <input type="text" class="form-control question-field" placeholder="Enter feedback headline" aria-describedby="basic-addon2" style="border-radius:4px;">
-                      </div>
-                      <div class="input-group" style="width:100%;margin-top:20px;">
-                        <input type="text" class="form-control question-field" placeholder="Enter feedback headline" aria-describedby="basic-addon2" style="height:72px;border-radius:4px;">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>                
-               
-              </div>
-              <div role="tabpanel" class="tab-pane" id="b">
-                             
-              </div>
-              <div role="tabpanel" class="tab-pane" id="c">
-                              
-              </div>
-              <div role="tabpanel" class="tab-pane" id="d">
-                               
               </div>
             </div>
-
           </div>
-          
-          <!-- <div class="add">
-            <div lass="row">
-              <div class="col-xs-4 media-upload-option media-upload-option-ex">
-              Upload from device
-              </div>
-              <div class="col-xs-4 media-upload-option media-upload-option-ex">
-              Paste URL
-              </div>
-              <div class="col-xs-4 media-upload-option">
-              Upload from PostPic
+
+          <div class="panel panel-default regular-pane">
+            <div class="regular-pane-header panel-heading" role="tab" id="answer-settings-heading">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#answer-settings" aria-expanded="false" aria-controls="answer-settings">
+                  Answer settings and feedback
+                  <i class="fa fa-caret-down"></i>
+                </a>
+              </h4>
+            </div>
+            <div id="answer-settings" class="panel-collapse collapse" role="tabpanel" aria-labelledby="answer-settings-heading">
+              <div class="panel-body">
+                def
               </div>
             </div>
-          </div> -->
+          </div>
+
+          <div class="panel panel-default regular-pane">
+            <div class="panel-heading regular-pane-header" role="tab" id="related-link-heading">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#related-link" aria-expanded="false" aria-controls="related-link">
+                  Add a related link after this question
+                  <i class="fa fa-caret-down"></i>
+                </a>
+              </h4>
+            </div>
+            <div id="related-link" class="panel-collapse collapse" role="tabpanel" aria-labelledby="related-link-heading">
+              <div class="panel-body">
+                ghi
+              </div>
+            </div>
+          </div>
+
+        </div>
           
         </div>
 
       </div>
 
     </div>
+
+   
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
